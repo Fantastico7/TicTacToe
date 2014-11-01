@@ -14,12 +14,6 @@ task applicationCodeCoverageReport(type:JacocoReport){
     sourceSets sourceSets.main
 }
 
-application/
-  build/
-    jacoco/
-      run.exec
-    reports/jacoco/applicationCodeCoverageReport/html/
-      index.html
 
 repositories {
     // Use 'jcenter' for resolving your dependencies.
