@@ -2,6 +2,24 @@
 
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: "jacoco"
+
+
+jacoco {
+    applyTo run
+}
+
+task applicationCodeCoverageReport(type:JacocoReport){
+    executionData run
+    sourceSets sourceSets.main
+}
+
+application/
+  build/
+    jacoco/
+      run.exec
+    reports/jacoco/applicationCodeCoverageReport/html/
+      index.html
 
 repositories {
     // Use 'jcenter' for resolving your dependencies.
