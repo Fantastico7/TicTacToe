@@ -92,3 +92,9 @@ run {
 task stage {
     dependsOn installApp
 } 
+
+test {
+    testLogging {
+	exceptionFormat = 'full'
+    }
+}
