@@ -89,4 +89,6 @@ run {
     standardInput = System.in
 }
  
-task stage { dependsOn installApp }
+task stage {
+    dependsOn installApp
+} 
