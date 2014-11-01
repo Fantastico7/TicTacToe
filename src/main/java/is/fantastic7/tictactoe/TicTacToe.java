@@ -8,10 +8,7 @@ public class TicTacToe {
 		TicTacToe newGame = new TicTacToe();
 
 		System.out.println("Welcome to TicTacToe! \nPick the first number from 0 to 2, press enter and then pick the second number from 0 to 2:");
-		//Scanner in = new Scanner(System.in);
-
-		int[] input = new int[]{0,0,1,1,0,1,2,2,0,2};
-
+		Scanner in = new Scanner(System.in);
 		newGame.setStartPlayer();
 		newGame.initializeBoard();
 		newGame.newBoard();
@@ -21,11 +18,14 @@ public class TicTacToe {
 		int x;
 		int o;
 
-		int i = 0;
-		while(!newGame.gameFinished()) {
-			
-			x = input[i++];
-			o = input[i++];
+		do {
+			x = 0;
+			o = 0;
+
+			if(in.hasNextInt()) {
+				x = in.nextInt();
+				o = in.nextInt();
+			}
 
 			if((x > 2 || x < 0)) {
 				System.out.println("Illegal move, game shutting dowm");
@@ -46,8 +46,7 @@ public class TicTacToe {
 			}
 
 		}
-		//return;
-		//while(!newGame.gameFinished());
+		while(!newGame.gameFinished());
 		System.exit(0);
 	} 
 
