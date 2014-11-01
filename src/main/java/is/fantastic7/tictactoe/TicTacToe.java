@@ -6,36 +6,56 @@ public class TicTacToe {
 
 		public static void main(String[] args) {
 		TicTacToe newGame = new TicTacToe();
-		Scanner in = new Scanner(System.in);
+
+		System.out.println("Welcome to TicTacToe! \nPick the first number from 0 to 2, press enter and then pick the second number from 0 to 2:");
+		//Scanner in = new Scanner(System.in);
+
+		int[] input = new int[]{0,0,1,1,0,1,2,2,0,2};
 
 		newGame.setStartPlayer();
 		newGame.initializeBoard();
 		newGame.newBoard();
+		newGame.displayBoard();
+
 		//If no win is determined or a draw, then switch to player 'o'
 		int x;
 		int o;
 
+		int i = 0;
 		while(!newGame.gameFinished()) {
-			x = in.nextInt();
-			o = in.nextInt();
+			
+			x = input[i++];
+			o = input[i++];
 
-			newGame.registerMove(x,o);
-			newGame.switchPlayer();
-			newGame.displayBoard();
+			if((x > 2 || x < 0)) {
+				System.out.println("Illegal move, game shutting dowm");
+				return;
+			}
+			else {
+				newGame.registerMove(x,o);
+				newGame.switchPlayer();
+				newGame.displayBoard();
+				System.out.println("Make your next move");
+			}
+
+			if(newGame.checkIfWin()) {
+				System.out.println("Congratulations We Have a Winner!!!");
+			}
+			if(newGame.checkIfBoardFull()){
+				System.out.println("No Winner,You are Equally Smart!!");
+			}
+
 		}
-		if(newGame.checkIfWin()) {
-			System.out.println("Congratulations We Have a Winner!!!");
-		}
-		else {
-			System.out.println("No Winner,You are Equally Smart!!");
-		}
-		System.exit(0);
+		return;
+		//while(!newGame.gameFinished());
+		//System.exit(0);
 	} 
 
 	
 	public char[][] board;
 	public char playerX;
 	public TicTacToe() {}
+
 
 	public void setStartPlayer() {
 		this.playerX = 'x';
