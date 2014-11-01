@@ -22,9 +22,7 @@ public class TicTacToe {
 		int o;
 
 		int i = 0;
-		while(!newGame.gameFinished())
-
-		do {
+		while(!newGame.gameFinished()) {
 			
 			x = input[i++];
 			o = input[i++];
@@ -48,8 +46,8 @@ public class TicTacToe {
 			}
 
 		}
-		while(!newGame.gameFinished());
-		System.exit(0);
+		//while(!newGame.gameFinished());
+		//System.exit(0);
 	} 
 
 	
