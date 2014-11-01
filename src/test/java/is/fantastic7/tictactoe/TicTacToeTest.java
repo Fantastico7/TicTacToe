@@ -7,6 +7,7 @@ import static java.lang.System.out;
 
 
 public class TicTacToeTest 
+<<<<<<< Updated upstream
 {
 	private TicTacToe t;
 	String printBoard;
@@ -149,4 +150,8 @@ public class TicTacToeTest
 		assertTrue(actual);
 	}
 
+=======
+{	
+		
+>>>>>>> Stashed changes
 }
