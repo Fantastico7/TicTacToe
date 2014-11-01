@@ -46,6 +46,7 @@ public class TicTacToe {
 			}
 
 		}
+		return;
 		//while(!newGame.gameFinished());
 		//System.exit(0);
 	} 
