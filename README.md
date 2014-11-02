@@ -1,28 +1,25 @@
-#TicTacToe
-=========
-Simple Spark Java app with support for Selenium testing. The App is a simple game of TicTacToe with player1 vs player2 in a Web application.
+# TicTacToe
+This is a simple App game of Tic Tac Toe written in Java that runs on Heroku.
 
+Tested on:
+✓Windows (8.1, 8.0, 7)
+✓Mac OS (Mavericks)
+✓Linux (Ubuntu 14.04 and Ubuntu Server 12.04)
 
-Runs on (tested on):
+## Screenshot of the App
+index.html                |
+--------------------------|
+![random](img/random.png) |
 
-- ✓ Windows (8.1, x86)
-- ✓ Mac OS (Mavericks)
+## Getting Started
+In order to run this app all you have to do is go to 
+https://fantastictactoe.herokuapp.com, at the moment the game cannot be played but the team is working hard to make it happen.
 
-## Screenshots
+## Not Good Enough?
+If you want to run the program locally on your own computer see the Development manual and the Administration manual in the root of the project for further instructions.
 
-tictactoe.html
-------------------------------
-![random](img/TicTacToe.png)
-
-
-## Getting started
-
-### Requirements
-* Java JDK (openjdk-7-jdk recommended) installed and accessible in the PATH
-
-### How to play!
-
-
-
-
-
+## The Team - Fantastic 7
+The team Fantastic7 consists of seven women in Computer Science at Reykjavík Univeristy Iceland.
+Fantastic 7               |
+--------------------------|
+(img/theTeam.png) 		  |
