@@ -5,7 +5,7 @@ jdk:
 
 script:
 - ./gradlew check
-- ./gradlew seleniumXvfb
+//- ./gradlew seleniumXvfb
 
 deploy:
    provider: heroku
