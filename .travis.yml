@@ -5,7 +5,12 @@ jdk:
 
 script:
 - ./gradlew check
+<<<<<<< HEAD
 //- ./gradlew seleniumXvfb
+=======
+- ./gradlew seleniumXvfb
+- ./gradlew test jacocoTestReport
+>>>>>>> 2d048c6e3d5f7f4656cfb8d0252826c44c62943f
 
 deploy:
    provider: heroku
