@@ -10,3 +10,8 @@ script:
 deploy:
    provider: heroku
    api_key: 67af61f8-113d-4e39-b755-80c206800211
+
+app: fantasticseven
+
+after_deploy: 
+- ./gradlew seleniumXvfb
