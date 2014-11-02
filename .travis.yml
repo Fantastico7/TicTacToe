@@ -1,4 +1,4 @@
-language: java
+/*language: java
 jdk:
 - openjdk7
 - oraclejdk7
@@ -18,5 +18,5 @@ deploy:
 app: fantasticseven
 
 after_deploy: 
-- ./gradlew seleniumXvfb
+- ./gradlew seleniumXvfb*/
 
