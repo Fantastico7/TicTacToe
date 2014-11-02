@@ -7,7 +7,6 @@ import static java.lang.System.out;
 
 
 public class TicTacToeTest 
-<<<<<<< Updated upstream
 {
 	private TicTacToe t;
 	String printBoard;
@@ -145,7 +144,7 @@ public class TicTacToeTest
 
 	@Test
 	public void testCheckIfWinGameFinished() {
-		this.testCheckIfWinAcross();
+		this.testCheckIfWinAcrossUpBottom();
 		boolean actual = t.gameFinished();
 		assertTrue(actual);
 	}
@@ -162,10 +161,6 @@ public class TicTacToeTest
 		}
 		boolean actual = t.gameFinished();
 		assertTrue(actual);
-	}
-
-=======
-{	
+	}	
 		
->>>>>>> Stashed changes
 }
