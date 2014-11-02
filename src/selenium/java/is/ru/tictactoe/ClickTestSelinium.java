@@ -1,4 +1,4 @@
-package com.example.tests;
+package is.fantastic7.tictactoe;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Google {
+public class Click {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -18,21 +18,17 @@ public class Google {
   @Before
   public void setUp() throws Exception {
     driver = new FirefoxDriver();
-    baseUrl = "https://www.google.is/";
+    baseUrl = "https://fantasticoseven.herokuapp.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
-  public void testGoogle() throws Exception {
-    try {
-      assertEquals("Google", driver.getTitle());
-    } catch (Error e) {
-      verificationErrors.append(e.toString());
-    }
-    driver.findElement(By.id("gbqfq")).clear();
-    driver.findElement(By.id("gbqfq")).sendKeys("firefox");
-    driver.findElement(By.linkText("Download Firefox — Free Web Browser — Mozilla")).click();
-    // ERROR: Caught exception [Error: locator strategy either id or name must be specified explicitly.]
+  public void testClick() throws Exception {
+    driver.get(baseUrl + "/");
+    driver.findElement(By.xpath("//input[@value='O']")).click();
+    driver.findElement(By.name("2")).click();
+    driver.findElement(By.cssSelector("input.button")).click();
+    driver.findElement(By.name("3")).click();
   }
 
   @After
