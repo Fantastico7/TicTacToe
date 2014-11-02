@@ -1,4 +1,17 @@
 language: java
-
 jdk:
 - openjdk7
+
+script:
+- ./gradlew check
+- ./gradlew seleniumXvfb
+
+deploy:
+   provider: heroku
+   api_key: 442bd72a-5735-42e6-97fe-51eb5250d031
+   run:
+   stragety: git
+   app: fantastictactoe
+
+after_deploy: 
+- ./gradlew seleniumXvfb
