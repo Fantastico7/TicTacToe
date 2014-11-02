@@ -1,5 +1,5 @@
 Command line:
-"travis setup heroku"
+"travis -version"
 
 
    ________                                 __
@@ -26,23 +26,37 @@ Command line:
 
      There is absolutely no warranty on any results obtained from TRAVIS.
 
-  #  Running on i-d979896b at Sun Nov  2 18:31:16 2014 (PID 11152).
+<<<<<<< HEAD
+  #  Running on i-d979896b at Sun Nov  2 18:10:10 2014 (PID 10319).
   #  Running in /home/hafrun/TicTacToe
+=======
+  #  Running on i-d979896b at Sun Nov  2 17:42:58 2014 (PID 9343).
+  #  Running in /home/gudrun/TicTacToe
+>>>>>>> 2da6bef73a1de53a379411602c574ac77e9a2eb2
   #  Source code version: Jan 17 2014.
   #  Compiled at Jan 19 2014 05:12:11.
   #  Compiler version: 4.8.2
   #  Target platform: Linux
   #  Compile flags: DEBUG_ARRAYS 
   #  Machine: int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+<<<<<<< HEAD
   #  User home: /home/hafrun
+=======
+  #  User home: /home/gudrun
+>>>>>>> 2da6bef73a1de53a379411602c574ac77e9a2eb2
   #  Exe path: /usr/bin/travis
   #  Input from terminal, Output to terminal
 
  >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
 
-    Loading configuration from /home/hafrun/.travis.conf ...
+    No configuration file found.
+<<<<<<< HEAD
+    Writing default configuration to /home/hafrun/.travis.conf ...
+=======
+    Writing default configuration to /home/gudrun/.travis.conf ...
+>>>>>>> 2da6bef73a1de53a379411602c574ac77e9a2eb2
 
-Unknown parameter: "setup".
+Unknown parameter: "-version".
 
     List of supported command line options:
 
