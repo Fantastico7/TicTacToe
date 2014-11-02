@@ -1,11 +1,12 @@
 language: java
+
 jdk:
-- openjdk7
+ - openjdk7
 
 script:
-./gradlew check
-./gradlew assemble
-./gradlew test jacocoTestReport
+ - ./gradlew check
+ - ./gradlew assemble
+ - ./gradlew test jacocoTestReport
 
 deploy:
    provider: heroku
