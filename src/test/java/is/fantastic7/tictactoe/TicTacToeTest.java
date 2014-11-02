@@ -118,7 +118,7 @@ public class TicTacToeTest
 	}
 
 	@Test
-	public void testCheckIfWinAcross() {
+	public void testCheckIfWinAcrossUpBottom() {
 		t.initializeBoard();
 		t.newBoard();
 		t.setStartPlayer();
