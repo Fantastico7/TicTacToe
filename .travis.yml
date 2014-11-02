@@ -11,7 +11,11 @@ deploy:
    api_key: 442bd72a-5735-42e6-97fe-51eb5250d031
    run:
    stragety: git
-   app: fantastictactoe
+   app: fantasticoseven
 
 after_deploy: 
+<<<<<<< HEAD
 - ./gradlew seleniumXvfb
+=======
+- ./gradlew seleniumXvfb
+>>>>>>> 8b43200ab794153316021b6da1f9f6b9ed445b7f
