@@ -1,5 +1,4 @@
 language: java
-
 jdk:
 - openjdk7
 
@@ -15,4 +14,8 @@ deploy:
    app: fantastictactoe
 
 after_deploy: 
+<<<<<<< HEAD
 - ./gradlew seleniumXvfb
+=======
+- ./gradlew seleniumXvfb
+>>>>>>> 8b43200ab794153316021b6da1f9f6b9ed445b7f
