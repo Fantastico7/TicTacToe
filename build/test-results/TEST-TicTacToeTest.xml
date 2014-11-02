@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TicTacToeTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2014-11-02T14:02:26" hostname="AnnaKatrin" time="0.013">
+<testsuite name="TicTacToeTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2014-11-02T14:03:42" hostname="AnnaKatrin" time="0.009">
   <properties/>
-  <testcase name="initializationError" classname="TicTacToeTest" time="0.013">
+  <testcase name="initializationError" classname="TicTacToeTest" time="0.008">
     <failure message="java.lang.Exception: Method assertArrayEquals() should not be static" type="java.lang.Exception">java.lang.Exception: Method assertArrayEquals() should not be static
 	at org.junit.runners.model.FrameworkMethod.validatePublicVoid(FrameworkMethod.java:88)
 	at org.junit.runners.model.FrameworkMethod.validatePublicVoidNoArg(FrameworkMethod.java:70)
