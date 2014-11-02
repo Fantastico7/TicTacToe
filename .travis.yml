@@ -6,6 +6,7 @@ jdk:
 script:
 - ./gradlew check
 - ./gradlew seleniumXvfb
+- ./gradlew test jacocoTestReport
 
 deploy:
    provider: heroku
