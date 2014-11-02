@@ -54,7 +54,7 @@ dependencies {
     seleniumXvfbCompile 'org.seleniumhq.selenium:selenium-java:2.39.0'
 }
 
-mainClassName = "is.fantastic7.tictactoe.TicTacToeWeb"
+mainClassName = "is.fantastic7.tictactoe.TicTacToe"
 
 task selenium(type: Test, dependsOn: installApp) {
     testClassesDir = sourceSets.selenium.output.classesDir
