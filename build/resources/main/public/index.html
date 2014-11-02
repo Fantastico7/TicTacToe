@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- load bootstrap for nicer ui -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+        <!-- Load jquery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container" style="text-align:center">
+            <h1>Shall we play a game of TicTacToe?</h1>
+              
+        </div>
+        <div>
+            <form style="text-align:center" method="post" action="/id" role="form">
+                <fieldset>
+                    <legend><input type="button" class="button" value="Next Player"></legend>
+                    <div id="row1">
+                        <span id="cell1.1" ><input type="button" style="width:30px;height:30px;" onclick="return registerMove('cell1.1');" value="O"></input></span>
+                        <span id="cell1.2" onclick="registerMove('cell1.2')"><input type="button" name="2" style="width:30px;height:30px;"></input></span>
+                        <span id="cell1.3" onclick="registerMove('cell1.3')"><input type="button" name="3" style="width:30px;height:30px;"></input></span>
+                    </div>
+                    <div>
+                        <span id="cell2.1" onclick="registerMove('cell2.1')"><input type="button" name="4" style="width:30px;height:30px;"></input></span>
+                        <span id="cell2.2" onclick="registerMove('cell2.2')"><input type="button" name="5" style="width:30px;height:30px;"></input></span>
+                        <span id="cell2.3" onclick="registerMove('cell2.3')"><input type="button" name="6" style="width:30px;height:30px;"></input></span>
+                    </div>
+                    <div>
+                        <span id="cell3.1" onclick="registerMove('cell3.1')"><input type="button" name="7" style="width:30px;height:30px;"></input></span>
+                        <span id="cell3.2" onclick="registerMove('cell3.2')"><input type="button" name="8" style="width:30px;height:30px;"></input></span>
+                        <span id="cell3.3" onclick="registerMove('cell3.3')"><input type="button" name="9" style="width:30px;height:30px;"></input></span>
+                    </div>
+                </fieldset>
+                
+            </form>
+        <div>
+    <script type="text/javascript">
+        function registerMove(x) 
+        {
+            document.getElementById(x).innerHTML= "X";            
+        }
+
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            var form = $('form');
+            form.submit(function( event ) {
+                var number = $("#number").val();
+                $.ajax({
+                    type: form.attr('method'),
+                    url: form.attr('action'),
+                    data: 'id=' + number
+                }).done(function(joke) {
+                    $('#results').html(joke).attr('class', 'alert alert-success');
+                }).fail(function() {
+                    $('#results').html('Error, no joke found...').attr('class', 'alert alert-danger');
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
+            <!--
+onclick="myFunction()">Click me.</p>
+
+
+
+
+            <table border="1" width="100%">
+              <tr height="100%">
+                <td id="0" width="33%">
+                    <form>
+                        <input type="button" name="1"></input>
+                    </form>
+                </td> 
+                <td id="1" width="33%">
+                    <form>
+                        <input type="button" name="2"></input>
+                    </form>
+                </td>
+             
+
+                <td id="2" width="33%"> 
+                    <form>
+                        <input type="button" name="3"></input>
+                    </form>
+                </td>
+      
+              </tr>
+              <tr height="72%">
+                <td id="3" width="24%"> 
+                    <form>
+                        <input type="button" name="4"></input>
+                    </form>
+                </td>
+                <td id="4" width="24%"> 
+                    <form>
+                        <input type="button" name="5"></input>
+                    </form>
+                </td>
+                <td id="5" width="24%"> 
+                    <form>
+                        <input type="button" name="6"></input>
+                    </form>
+                </td>
+              </tr>
+              <tr height="100%">
+                <td id="6" width="24%">
+                    <form>
+                        <input type="button" name="7"></input>
+                    </form>
+                </td>
+                <td id="7" width="24%"> 
+                    <form>
+                        <input type="button" name="8"></input>
+                    </form>
+                </td>
+                <td id="8" width="24%"> 
+                    <form>
+                        <input type="button" name="9"></input>
+                    </form>
+                </td>
+              </tr>
+            </table>
+        </div>-->
+    <!-- Use ajax to submit move and display on page -->
+      <script>
+        
+        $(document).ready(function() {
+             
+            $("#click").click(function(){
+                console.log("joli");
+            });
+            $("#tictactoe tr td").click(function(){
+                console.log("joli");
+            });
+            var form = $('form');
+            form.submit(function( event ) {
+                $.ajax({
+                    type: form.attr('method'),
+                    url: form.attr('action'),
+                    data: bla//
+                }).done(function(board) {
+
+                    $('#results').html(board).attr('class', 'alert alert-success');
+                }).fail(function() {
+                    $('#results').html('Error, no joke found...').attr('class', 'alert alert-danger');
+                });
+                event.preventDefault();
+            });
+        });
+      </script>
+  </body>
+</html>

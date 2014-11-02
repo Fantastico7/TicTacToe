@@ -1,17 +1,14 @@
 package is.fantastic7.tictactoe;
 import java.util.Scanner;
-import static java.lang.System.out;
+//import static java.lang.System.out;
 
 public class TicTacToe {
 
 		public static void main(String[] args) {
 		TicTacToe newGame = new TicTacToe();
 
-		System.out.println("Welcome to TicTacToe! \nPick the first number from 0 to 2, press enter and then pick the second number from 0 to 2:");
-		//Scanner in = new Scanner(System.in);
-
-		int[] input = new int[]{0,0,1,1,0,1,2,2,0,2};
-
+		System.out.println("Welcome to TicTacToe! \nPick the first number from 1 to 3, press enter and then pick the second number from 1 to 3:");
+		Scanner in = new Scanner(System.in);
 		newGame.setStartPlayer();
 		newGame.initializeBoard();
 		newGame.newBoard();
@@ -21,18 +18,27 @@ public class TicTacToe {
 		int x;
 		int o;
 
-		int i = 0;
-		while(!newGame.gameFinished()) {
-			
-			x = input[i++];
-			o = input[i++];
+		do {
+			x = 1;
+			o = 1;
 
-			if((x > 2 || x < 0)) {
-				System.out.println("Illegal move, game shutting dowm");
-				return;
+			if(in.hasNextInt()) {
+				x = in.nextInt();
+				o = in.nextInt();
+			}
+
+			if((x > 3 || x < 1)) {
+				System.out.println("Illegal move, insert numbers between 1 and 3");
+				continue;
 			}
 			else {
-				newGame.registerMove(x,o);
+				// Check if space is already occupied
+				if (newGame.board[x-1][o-1] == 'x' || newGame.board[x-1][o-1] == 'o')
+                {
+                	System.out.println("space is full, please insert to a empty position");
+                	continue;
+                }
+				newGame.registerMove(x-1,o-1);
 				newGame.switchPlayer();
 				newGame.displayBoard();
 				System.out.println("Make your next move");
@@ -46,8 +52,7 @@ public class TicTacToe {
 			}
 
 		}
-		//return;
-		//while(!newGame.gameFinished());
+		while(!newGame.gameFinished());
 		System.exit(0);
 	} 
 
@@ -178,10 +183,5 @@ public class TicTacToe {
 	{
 		return this.checkIfWin() || this.checkIfBoardFull();
 	}
-
+	
 }
-
-
-
-
-
