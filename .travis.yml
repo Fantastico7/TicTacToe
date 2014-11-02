@@ -5,13 +5,10 @@ jdk:
 script:
 ./gradlew check
 ./gradlew assemble
+./gradlew seleniumXvfb
 
 deploy:
    provider: heroku
    api_key: e5762a31-a63c-4917-b918-3d0a34d5f5d6
-   run:
    stragety: git
    app: fantasticoseven
-
-after_deploy: 
-- ./gradlew seleniumXvfb

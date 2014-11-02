@@ -40,12 +40,11 @@ sourceSets {
 
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.5'
-    //compile 'org.slf4j.impl.StaticLoggerBinder'
+    
     testCompile 'junit:junit:4.11'
     compile fileTree(dir: 'lib', include: ['*.jar'])
-    //compile 'com.google.code.gson:gson:2.3'
+    compile 'org.slf4j:slf4j-simple:1.7.5
 
-    //compile 'net.joningi:icndb-java-api:1.0'
     compile 'com.sparkjava:spark-core:1.1.1'
 
     seleniumCompile 'junit:junit:4.11'
@@ -53,6 +52,8 @@ dependencies {
 
     seleniumXvfbCompile 'junit:junit:4.11'
     seleniumXvfbCompile 'org.seleniumhq.selenium:selenium-java:2.39.0'
+    compile 'com.googlecode.princeton-java-introduction:stdlib:1.0.1
+
 }
 
 mainClassName = "is.fantastic7.tictactoe.TicTacToeWeb"
