@@ -161,6 +161,6 @@ public class TicTacToeTest
 		}
 		boolean actual = t.gameFinished();
 		assertTrue(actual);
-	}	
-		
+	}
+
 }
