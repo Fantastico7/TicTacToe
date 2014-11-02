@@ -57,7 +57,7 @@ dependencies {
 }
 
 
-mainClassName = "is.fantastic7.tictactoe.TicTacToe"
+mainClassName = "is.fantastic7.tictactoe.TicTacToeWeb"
 
 task selenium(type: Test, dependsOn: installApp) {
     testClassesDir = sourceSets.selenium.output.classesDir
