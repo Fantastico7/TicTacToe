@@ -22,4 +22,4 @@ If you want to run the program locally on your own computer see the Development 
 The team Fantastic7 consists of seven women in Computer Science at Reykjavík Univeristy Iceland.
 Fantastic 7               |
 --------------------------|
-(img/theTeam.png) 		  |
+![theTeam](img/theTeam.png) 		  |
