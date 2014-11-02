@@ -7,9 +7,8 @@ Tested on:
 ✓Linux (Ubuntu 14.04 and Ubuntu Server 12.04)
 
 ## Screenshot of the App
-index.html                |
---------------------------|
-![random](img/random.png) |
+index.html               
+![random](img/random.png) 
 
 ## Getting Started
 In order to run this app all you have to do is go to 
@@ -20,6 +19,5 @@ If you want to run the program locally on your own computer see the Development 
 
 ## The Team - Fantastic 7
 The team Fantastic7 consists of seven women in Computer Science at Reykjavík Univeristy Iceland.
-Fantastic 7               |
---------------------------|
+Fantastic 7               
 ![theTeam](img/theTeam.png) 		  |
