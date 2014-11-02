@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TicTacToeTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2014-11-02T13:36:28" hostname="idea-PC" time="0.01">
+<testsuite name="TicTacToeTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2014-11-02T13:45:20" hostname="AnnaKatrin" time="0.009">
   <properties/>
-  <testcase name="initializationError" classname="TicTacToeTest" time="0.009">
+  <testcase name="initializationError" classname="TicTacToeTest" time="0.008">
     <failure message="java.lang.Exception: Method assertArrayEquals() should not be static" type="java.lang.Exception">java.lang.Exception: Method assertArrayEquals() should not be static
 	at org.junit.runners.model.FrameworkMethod.validatePublicVoid(FrameworkMethod.java:88)
 	at org.junit.runners.model.FrameworkMethod.validatePublicVoidNoArg(FrameworkMethod.java:70)
@@ -41,7 +41,7 @@
 	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:744)
+	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
   <testcase name="initializationError" classname="TicTacToeTest" time="0.0">
@@ -83,7 +83,7 @@
 	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:744)
+	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
   <testcase name="initializationError" classname="TicTacToeTest" time="0.0">
@@ -126,7 +126,7 @@
 	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:744)
+	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
