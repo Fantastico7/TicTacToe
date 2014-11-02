@@ -26,22 +26,21 @@ Command line:
 
      There is absolutely no warranty on any results obtained from TRAVIS.
 
-  #  Running on i-d979896b at Sun Nov  2 18:10:10 2014 (PID 10319).
-  #  Running in /home/hafrun/TicTacToe
+  #  Running on i-d979896b at Sun Nov  2 16:49:13 2014 (PID 7582).
+  #  Running in /home/annak/TicTacToe
   #  Source code version: Jan 17 2014.
   #  Compiled at Jan 19 2014 05:12:11.
   #  Compiler version: 4.8.2
   #  Target platform: Linux
   #  Compile flags: DEBUG_ARRAYS 
   #  Machine: int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
-  #  User home: /home/hafrun
+  #  User home: /home/annak
   #  Exe path: /usr/bin/travis
   #  Input from terminal, Output to terminal
 
  >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
 
-    No configuration file found.
-    Writing default configuration to /home/hafrun/.travis.conf ...
+    Loading configuration from /home/annak/.travis.conf ...
 
 Unknown parameter: "version".
 
