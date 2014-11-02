@@ -9,14 +9,66 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container" style="text-align:center">
             <h1>Shall we play a game of TicTacToe?</h1>
-            <p>Input row number and column</p>
-            <div id="click" >
-              <div id="X" class="">Player X</div>
-              <div id="O" class="">Player O</div>
-              <input type="button" class="button" value="Next Player">
-            </div>
+              
+        </div>
+        <div>
+            <form style="text-align:center" method="post" action="/id" role="form">
+                <fieldset>
+                    <legend><input type="button" class="button" value="Next Player"></legend>
+                    <div id="row1">
+                        <span id="cell1.1" ><input type="button" style="width:30px;height:30px;" onclick="return registerMove('cell1.1');" value="O"></input></span>
+                        <span id="cell1.2" onclick="registerMove('cell1.2')"><input type="button" name="2" style="width:30px;height:30px;"></input></span>
+                        <span id="cell1.3" onclick="registerMove('cell1.3')"><input type="button" name="3" style="width:30px;height:30px;"></input></span>
+                    </div>
+                    <div>
+                        <span id="cell2.1" onclick="registerMove('cell2.1')"><input type="button" name="4" style="width:30px;height:30px;"></input></span>
+                        <span id="cell2.2" onclick="registerMove('cell2.2')"><input type="button" name="5" style="width:30px;height:30px;"></input></span>
+                        <span id="cell2.3" onclick="registerMove('cell2.3')"><input type="button" name="6" style="width:30px;height:30px;"></input></span>
+                    </div>
+                    <div>
+                        <span id="cell3.1" onclick="registerMove('cell3.1')"><input type="button" name="7" style="width:30px;height:30px;"></input></span>
+                        <span id="cell3.2" onclick="registerMove('cell3.2')"><input type="button" name="8" style="width:30px;height:30px;"></input></span>
+                        <span id="cell3.3" onclick="registerMove('cell3.3')"><input type="button" name="9" style="width:30px;height:30px;"></input></span>
+                    </div>
+                </fieldset>
+                
+            </form>
+        <div>
+    <script type="text/javascript">
+        function registerMove(x) 
+        {
+            document.getElementById(x).innerHTML= "X";            
+        }
+
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            var form = $('form');
+            form.submit(function( event ) {
+                var number = $("#number").val();
+                $.ajax({
+                    type: form.attr('method'),
+                    url: form.attr('action'),
+                    data: 'id=' + number
+                }).done(function(joke) {
+                    $('#results').html(joke).attr('class', 'alert alert-success');
+                }).fail(function() {
+                    $('#results').html('Error, no joke found...').attr('class', 'alert alert-danger');
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
+            <!--
+onclick="myFunction()">Click me.</p>
+
+
+
+
             <table border="1" width="100%">
               <tr height="100%">
                 <td id="0" width="33%">
@@ -73,10 +125,12 @@
                 </td>
               </tr>
             </table>
-        </div>
+        </div>-->
     <!-- Use ajax to submit move and display on page -->
       <script>
+        
         $(document).ready(function() {
+             
             $("#click").click(function(){
                 console.log("joli");
             });
