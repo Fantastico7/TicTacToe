@@ -4,12 +4,23 @@ jdk:
  - openjdk7
 
 script:
- - ./gradlew check
- - ./gradlew assemble
- - ./gradlew test jacocoTestReport
+- ./gradlew clean
+- ./gradlew check
+- ./gradlew assemble
+- ./gradlew installApp
+- ./gradlew test jacocoTestReport
 
 deploy:
    provider: heroku
    api_key: e5762a31-a63c-4917-b918-3d0a34d5f5d6
    stragety: git
    app: fantasticoseven
+
+notifications:
+  email:
+    recipients:
+	- annaksnorra@gmail.com
+	- hafruns@gmail.com
+	- fantasticoseven@gmail.com
+    on_success: change
+    on_failure: always
