@@ -95,7 +95,7 @@ task seleniumXvfb(type: Test, dependsOn: installApp) {
 
 jar {
     manifest {
-        attributes("Main-Class": "is.fantastic7.tictactoe.TicTacToeWeb")
+        attributes("Main-Class": "is.fantastic7.tictactoe.TicTacToe")
     }
 }
 
